@@ -1,0 +1,1 @@
+The main purpose of this chapter is to understand the kinematics characteristics of pincher arm, and be familiar with the modeling method of robot arm. Finally, using robot toolbox in MATLAB to control pincher arm.

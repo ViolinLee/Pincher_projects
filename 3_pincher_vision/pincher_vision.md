@@ -1,0 +1,1 @@
+The main purpose of this chapter is to integrate camera with pincher arm through ros. 

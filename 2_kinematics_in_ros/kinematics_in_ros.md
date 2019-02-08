@@ -1,0 +1,1 @@
+The purpose of this chapter is to familiarize ourselves with move_it ros package and use it to control the motion of pincher arm.
