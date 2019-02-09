@@ -2,7 +2,7 @@ The main purpose of this chapter is to understand the kinematics characteristics
 Reference resources: [petercorke](http://petercorke.com/wordpress/resources)
 
 
-## Preference:
+## Preparations:
 ### Step 1. Familiar with arm kinematics / DH parameter   
 Read the following articles:   
 [DH parameters](http://petercorke.com/wordpress/?ddownload=545)   
