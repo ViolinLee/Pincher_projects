@@ -1,0 +1,1 @@
+The main purpose of this chapter (project) is to learn how to use a manipulator mounted on a moving chassis.
