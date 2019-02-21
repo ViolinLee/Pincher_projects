@@ -220,7 +220,35 @@ This means that your arm is successfully connected and ready to receive motion c
 
     arbotix_gui
 
-Then, you should see the following interface of the Arbotix Simulator:   
+Then, you should see the following interface of the Arbotix Simulator: 
+<center>![arbotix](figures/arbotix_gui.png)</center>    
+You can now control the joints of the pincher arm by draging the sliders. Check this [vedio](https://www.youtube.com/watch?v=4jrBzh3I_xI&t=4s).   
+
+
+### Step 6. Pincher Aram Motion Planning using MoveIt   
+If you use the turtlebot\_arm package in this repository, you need not to modify anything. But if you use other turtlebot\_arm package, you may need to modify some code to make moveit work! The most obvious one is to change the arg 
+First, Start up the arbotix driver:
+
+    roslaunch turtlebot_arm_bringup arm.launch --screen
+    
+Then, launch moveit:   
+
+    roslaunch turtlebot_arm_moveit_config turtlebot_arm_moveit.launch sim:=false --screen
+
+Up to now, you can do motion planning for pincher arm. Check this vedio.   
+
+Note: We can directly control the every joints of the pincher arm by sending relative message to specific topics. Run the command `rostopic list` to check out the topics: 
+
+
+
+We can see many interesting topic, among which some can be use to control the joints. For example:    
+
+    rostopic pub /gripper_joint/command std_msgs/Float64 1.0 -1
+    rostopic pub /arm_shoulder_lift_joint/command std_msgs/Float64 1.0 -1
+    rostopic pub /arm_shoulder_pan_joint/command std_msgs/Float64 1.0 -1
+    rostopic pub /arm_elbow_flex_joint/command std_msgs/Float64 1.0 -1
+    rostopic pub /arm_wrist_flex_joint/command std_msgs/Float64 1.0 -1
+
 
 
 
