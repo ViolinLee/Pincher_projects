@@ -251,9 +251,19 @@ We can see many interesting topic, among which some can be use to control the jo
 
 
 
+## Moveit in simulation mode
+### Step 1. Preparation
+Copy moveit\_ikine.py to "turtlenot_arm_moveit_config/scripts" directory.
 
+### Step 2. Run the following command
 
+    chmod +x moveit_ikine.py
 
+In "turtlenot_arm_moveit_config/scripts" directory.
+
+    roslaunch turtlebot_arm_bringup arm.launch
+    roslaunch turtlebot_arm_moveit_config demo.launch
+    rosrun turtlebot_arm_moveit_config moveit_ikine.py
 
 
 
