@@ -251,7 +251,7 @@ We can see many interesting topic, among which some can be use to control the jo
 
 
 
-## Moveit in simulation mode
+## Moveit in simulation mode (Inverse kinematics using moveit test)
 ### Step 1. Preparation
 Copy moveit\_ikine.py to "turtlenot_arm_moveit_config/scripts" directory.
 
