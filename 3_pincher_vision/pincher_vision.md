@@ -55,11 +55,11 @@ After moving to the fourth point, the calibration script will output some infoma
 #### Step 3. Perform Block Pick-and-Place
 Firstly, run the following command to launch pincher arm the main MoveIt executable to provide move groups.    
 
-`roslaunch turtlebot_arm_object_manipulation object_manipulation_moveit.launch`  
+`roslaunch turtlebot_arm_block_manipulation block_manipulation_moveit.launch`  
 
 Secondly, run the following command to launch Kinect V1, and provide an arbitrary link between pincher arm and 3D camera (You should modify object_manipulation_demo.launch by yourself to make sure that the transfomation between 3D camera and pincher arm are correct. The **static\_transform\_publisher** parameters can be obtained from Step 2). 
 
-`roslaunch turtlebot_arm_object_manipulation object_manipulation_demo.launch`
+`roslaunch turtlebot_arm_block_manipulation block_manipulation_demo.launch`
 
 In order to perform the pick and place tasks properly, you may need to modify other parameters, such as the height of the table, the size of your blocks, and so on.
 
